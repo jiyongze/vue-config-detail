@@ -1,0 +1,10 @@
+/* 引入自定义的样式和覆盖iview中的样式 */
+$height:10px;
+.my{
+  height: $height;
+  width: 10px;
+  background: url('./assets/logo.png') center center no-repeat;
+  background-size: cover;
+}
+
+

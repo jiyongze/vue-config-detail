@@ -1,3 +1,9 @@
+/* babel编译预设
+ modules": false不设置任何风格，可选 amd | cmd | false
+plugins: 引入了一些插件，transform-runtime插件将es6转换为es5，
+transform-vue-jsx  使得当前版本的vuejs支持jsx语法
+
+ */
 {
   "presets": [
     ["env", {
@@ -8,5 +14,11 @@
     }],
     "stage-2"
   ],
-  "plugins": ["transform-vue-jsx", "transform-runtime"]
+  "plugins": [
+    "transform-vue-jsx", "transform-runtime",
+    ["import",{
+      "libraryName": "iview",
+      "libraryDirectory": "src/components"
+    }]
+  ]
 }

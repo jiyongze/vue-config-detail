@@ -6,7 +6,10 @@ const merge = require('webpack-merge')
 const path = require('path')
 const baseWebpackConfig = require('./webpack.base.conf')
 const CopyWebpackPlugin = require('copy-webpack-plugin')
+// 根据模板生成html文件，将打包后的js文件插入到html中去
+
 const HtmlWebpackPlugin = require('html-webpack-plugin')
+// 清除webpack打包错误提示插件，显示更友好
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin')
 const portfinder = require('portfinder')
 
